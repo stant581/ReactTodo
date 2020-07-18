@@ -6,13 +6,13 @@ const Todos = ({todos, deleteTodo}) => {
     //{
         const todoList = todos.length ? (todos.map( todo => {
             return (
-                <div className="collection-item" key={todo.id}>
-                    <span onClick = { () => {deleteTodo(todo.id)}}>{todo.content}</span>
+                <div className="collection-item center" key={todo.id} onClick = { () => {deleteTodo(todo.id)}}>
+                    <span>{todo.content}</span>
                     
                 </div>
             )
         })
-        ) : (<p className="center">No more Todo's</p>)
+        ) : (<p className="center">Couldn't find any content. You can add below</p>)
     return (
         <div className="todos collection">
         {todoList}

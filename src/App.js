@@ -6,8 +6,6 @@ class App extends Component {
 
   state = {
     todos: [
-      { id: 1, content: 'Write your first React App'},
-      { id: 2, content: 'Learn it well before writing'}
     ]
   }
 
